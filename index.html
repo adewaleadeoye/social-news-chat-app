@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Connect 360</title>
+	
+	<!-- font Raleway link -->  
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- all css here -->
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/swipebox.css">		        
+	<!-- font-awesome.min CSS -->      
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- style CSS -->          
+	<link rel="stylesheet" href="style.css">
+	<!-- style CSS -->          
+	<link rel="stylesheet" href="css/responsive.css">
+
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+       <div class="panel panel-left panel-reveal menubg close-panel">
+    	<div class="menu-hoverlay">
+			<div class="line"></div>
+			<div class="logo-box">
+                <div class="avatar"></div>
+                                <h3 class="profilename"></h3>
+			</div>
+			<div class="mainmenu">
+                        <ul class="collapsible">
+                    
+			<li>
+                            <a href="new.html" class="close-panel"><i class="fa fa-asterisk"></i>New</a>
+			</li>
+<!--
+			<li>
+                            <a href="passions.html" class="close-panel"><i class="fa fa-fire"></i>Passions</a>
+			</li>
+-->
+			<li>
+                            <a href="store.html" class="close-panel"><i class="fa fa-shopping-cart"></i> Store</a>
+			</li>
+			<li>
+                            <a href="chat.html" class="close-panel"><i class="fa fa-wechat"></i> Chat Room</a>
+			</li>
+			<li>
+				<a href="gallery.html" class="close-panel"><i class="fa fa-photo"></i> Gallery</a>
+			</li>
+			<li>
+				<a href="#" class="close-panel"><i class="fa fa-angellist"></i> VIP</a>
+			</li>
+                    </ul>
+			</div>
+			<!-- Menu end -->
+		</div>
+    </div>
+
+    <div class="popup popup-addtopic">
+	<div class="registerbody">
+		<a href="#" class="close-popup closebutton "><i class="fa fa-times"></i></a>
+                <p>&nbsp;</p><p>&nbsp;</p>
+		<div class="register-content">
+                    <div class="input-item">
+                            <span>Title:</span><br>
+                            <input type="text" id="topic-title" placeholder="Your topic title">
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="input-item">
+                            <span>Topic Text:</span><br>
+                            <textarea id="topic-text"></textarea>
+                    </div>
+                    <div class="input-item">
+                            <button class="button button-big" onclick="addTopic()">Send</button>
+                    </div>						
+		</div>
+	 </div>
+</div>
+
+       <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+		<div class="view view-main">
+			<!-- Top Navbar-->
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left">
+				 <a href="#" class="link icon-only open-panel"><img src="img/menu.png" alt=""></a>
+					</div>
+					<!-- We have home navbar without left link-->
+					<div class="center sliding">Connect 360</div>
+				</div>
+			</div>
+
+            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-through toolbar-through">
+			  <!-- Page, data-page contains page name-->
+				<div data-page="index" class="page">
+				<!-- Scrollable page content-->
+					<div class="page-content">
+	 				<div class="register-content">
+
+				
+                                
+		
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    </div>
+	
+	<!-- Js -->
+	<!-- jquery-1.11.3.min js -->         
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Path to Framework7 Library JS --> 
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!--jquery.swipebox js --> 
+    <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+	<!-- Path to your app js --> 
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
